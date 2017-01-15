@@ -1,0 +1,124 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article} % paper and 12pt font size
+
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{fancyhdr}
+\usepackage[catalan]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usepackage{textcomp}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{listings}
+\graphicspath{ {img/} }
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Document title}
+\rhead{Author name}
+\cfoot{\thepage}
+
+\begin{document}
+
+
+\section{Section 1}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris justo elit, porta et mi fermentum, malesuada blandit enim. Etiam convallis purus id ante sodales, quis gravida justo luctus. Curabitur bibendum facilisis dui, sed commodo lorem. Duis ut ultricies ligula, condimentum congue ante. Suspendisse potenti. Fusce sed molestie quam. Pellentesque molestie ante vel dolor posuere viverra.
+\\
+
+Vivamus congue leo eget erat hendrerit, quis egestas est accumsan:
+\begin{itemize}
+	\item{Aenean id congue nisi. Duis suscipit quam enim, vel porta nisl tincidunt vel. Nunc nec mi non nunc ultricies convallis auctor sodales augue.}
+	\item{Cras malesuada venenatis neque vitae commodo. Quisque vitae nunc id ex volutpat euismod a vel nunc.}
+\end{itemize}
+
+\section{Section 2}
+Maecenas quis lacus condimentum, laoreet lacus aliquet, \textbf{\textit{mollis velit}}. Nam convallis turpis consequat enim lobortis, vitae euismod mi mollis.
+\\
+
+Donec eu est aliquam, tincidunt risus ut, dapibus dui. Vestibulum rhoncus tortor tortor, iaculis iaculis dolor sodales nec. Maecenas fermentum sapien ex, id tincidunt felis ultricies fringilla. Nunc non interdum enim. 
+
+\begin{itemize}
+	\item Etiam risus dolor, interdum at lobortis ac, aliquet quis mauris. Aliquam feugiat iaculis sagittis. Integer elementum ut ligula a bibendum. Proin quis finibus ligula:
+
+	\begin{enumerate}
+		\item Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque nec tortor non ipsum ultrices consectetur in quis ipsum. Fusce condimentum tortor lobortis lacinia lacinia. Nulla ultricies mattis diam non aliquet.
+		\item Nam condimentum dapibus nisi, eleifend tempor turpis. Nam sit amet tortor auctor, dictum mi in, venenatis augue.
+		\item Aenean congue metus id gravida convallis. Praesent porta nunc non nisl mollis efficitur. Cras venenatis, est a mattis tincidunt, nisl felis tristique sem, vitae cursus augue nibh in arcu. Vivamus tempor hendrerit eleifend.
+		\item Duis et rutrum sem, at ornare nunc. Fusce lacus nisi, dapibus nec massa non, commodo eleifend mauris.
+	\end{enumerate}
+\end{itemize}
+
+\subsection{Subsection a)}
+Donec placerat nisi ut quam aliquam tincidunt a sit amet neque. Mauris quis ante erat. Sed ultricies dapibus nisi, quis porta urna placerat vel. Fusce purus purus, malesuada in odio sit amet, vulputate varius velit. In tristique tincidunt dui, eu egestas lacus laoreet vel. Nunc accumsan sapien augue, a elementum justo suscipit ac. Integer vehicula libero eu ex mollis, ac aliquam nunc auctor. Ut velit dui, dapibus at gravida ut, tristique eget velit. Sed convallis aliquam turpis, non viverra elit. 
+\\
+
+{\color{blue}
+	\renewcommand\labelitemi{}
+
+	Suspendisse potenti. Cras in accumsan turpis:
+	{\fontfamily{pcr}\selectfont\small
+	\begin{itemize}
+		\item void praesent(String eu, DateTime iaculis, String sem, String aestus, String oraculum)
+		\item void vivamus(String facilisis, String convallis, String rutrum)
+	\end{itemize}
+	}
+}
+
+\subsection{Apartat b) [1,5 punt]}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris justo elit, porta et mi fermentum, malesuada blandit enim. Etiam convallis purus id ante sodales, quis gravida justo luctus. Curabitur bibendum facilisis dui, sed commodo lorem. Duis ut ultricies ligula, condimentum congue ante. Suspendisse potenti. Fusce sed molestie quam. Pellentesque molestie ante vel dolor posuere viverra. 
+\\
+
+Vivamus congue leo eget erat hendrerit, quis egestas est accumsan. Aenean id congue nisi. Duis suscipit quam enim, vel porta nisl tincidunt vel. Nunc nec mi non nunc ultricies convallis auctor sodales augue. Cras malesuada venenatis neque vitae commodo. Quisque vitae nunc id ex volutpat euismod a vel nunc. Maecenas quis lacus condimentum, laoreet lacus aliquet, mollis velit. Nam convallis turpis consequat enim lobortis, vitae euismod mi mollis. Donec eu est aliquam, tincidunt risus ut, dapibus dui. Vestibulum rhoncus tortor tortor, iaculis iaculis dolor sodales nec.
+
+\begin{itemize}
+	\item[] Maecenas fermentum sapien ex, id tincidunt felis ultricies fringilla.
+	\item[] Nunc non interdum enim.
+\end{itemize}
+
+\newpage
+\section{Section 3}
+\subsection{Subsection a)}
+Etiam risus dolor, interdum at lobortis ac, aliquet quis mauris. Aliquam feugiat iaculis sagittis. Integer elementum ut ligula a bibendum. Proin quis finibus ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque nec tortor non ipsum ultrices consectetur in quis ipsum. Fusce condimentum tortor lobortis lacinia lacinia. Nulla ultricies mattis diam non aliquet. Nam condimentum dapibus nisi, eleifend tempor turpis. Nam sit amet tortor auctor, dictum mi in, venenatis augue. Aenean congue metus id gravida convallis. Praesent porta nunc non nisl mollis efficitur. Cras venenatis, est a mattis tincidunt, nisl felis tristique sem, vitae cursus augue nibh in arcu. Vivamus tempor hendrerit eleifend. Duis et rutrum sem, at ornare nunc. Fusce lacus nisi, dapibus nec massa non, commodo eleifend mauris.
+\\
+
+{\color{blue}
+	Donec placerat nisi ut quam aliquam tincidunt a sit amet neque. Mauris quis ante erat. Sed ultricies dapibus nisi, quis porta urna placerat vel. Fusce purus purus, malesuada in odio sit amet, vulputate varius velit. In tristique tincidunt dui, eu egestas lacus laoreet vel. Nunc accumsan sapien augue, a elementum justo suscipit ac. Integer vehicula libero eu ex mollis, ac aliquam nunc auctor. Ut velit dui, dapibus at gravida ut, tristique eget velit. Sed convallis aliquam turpis, non viverra elit. 
+
+	\begin{itemize}
+		\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. $\Longrightarrow$ O(1)
+		\item Mauris justo elit, porta et mi fermentum, malesuada blandit enim. $\Longrightarrow$ O(C)
+		\item Etiam convallis:  $\Longrightarrow$ purus id ante: O(5*C) $\simeq$ O(C)
+		\begin{enumerate}
+			\item Suspendisse potenti. $\Longrightarrow$ O(1)
+			\item Fusce sed molestie quam. $\Longrightarrow$ O(1)
+		\end{enumerate}
+		\item Pellentesque molestie ante vel dolor posuere viverra.  $\Longrightarrow$ O(1)
+		\item Vivamus congue leo eget erat hendrerit, quis egestas est accumsan. $\Longrightarrow$ O(1)
+	\end{itemize}
+
+	Aenean id congue nisi. Duis suscipit quam enim, vel porta nisl tincidunt vel.
+	\begin{center}
+		O(3 + 2C) $\simeq$ \textbf{O(C)}
+	\end{center}
+}
+
+\subsection{Subsection b)}
+Suspendisse potenti. Cras in accumsan turpis. Praesent eu iaculis sem. Suspendisse nec ante dolor. Curabitur ac orci ligula. Vivamus facilisis convallis rutrum. Nulla sit amet eros sed ex laoreet fermentum sit amet eget ex. Maecenas risus ex, convallis eget metus ac, suscipit posuere ipsum. Nam a eros vel tellus faucibus aliquet a non arcu. Donec auctor sapien vel sapien tincidunt elementum.
+\\
+
+	\begin{figure}[H]
+		\includegraphics[width=12cm]{Lorem_Ipsum}
+		\centering
+		\color{blue}
+		\caption{Donec gravida nisl ut massa vehicula \textbf{\textit{sagittis}}.}\label{visina8}
+	\end{figure}
+
+\end{document}
