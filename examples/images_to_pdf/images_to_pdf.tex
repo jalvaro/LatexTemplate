@@ -1,0 +1,52 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article} % paper and 12pt font size
+
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usepackage{textcomp}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{textgreek}
+\graphicspath{ {img/} }
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Subject}
+\rhead{Author}
+\cfoot{\thepage}
+
+\begin{document}
+
+
+\section{Image 1}
+
+\begin{figure}[H]
+	\begin{changemargin}{-2.5cm}{0.5cm}
+		\includegraphics[width=17cm]{maig_18/img1}
+		\centering
+		\color{blue}
+		\caption{Image 1.}\label{visina8}
+	\end{changemargin}
+\end{figure}
+
+\begin{figure}[H]
+	\includegraphics[width=10cm]{maig_18/img2}
+	\centering
+	\color{blue}
+	\caption{Image 2.}\label{visina8}
+\end{figure}
+
+\end{document}
